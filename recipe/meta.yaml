@@ -12,11 +12,16 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
 
 requirements:
   build:
+    - {{ pin_compatible('numpy') }}
+    - {{ compiler('fortran') }}
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
@@ -30,7 +35,6 @@ requirements:
   run:
     - adios {{ version }}
     - python
-    - {{ pin_compatible('numpy') }}
 
 test:
   requires:
