@@ -25,13 +25,6 @@ Current build status
 
 
 <table><tr>
-    <td>Travis</td>
-    <td>
-      <a href="https://travis-ci.org/conda-forge/adios-python-feedstock">
-        <img alt="macOS" src="https://img.shields.io/travis/conda-forge/adios-python-feedstock/master.svg?label=macOS">
-      </a>
-    </td>
-  </tr><tr>
     <td>Drone</td>
     <td>
       <a href="https://cloud.drone.io/conda-forge/adios-python-feedstock">
