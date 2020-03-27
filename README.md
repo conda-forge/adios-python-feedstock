@@ -3,7 +3,7 @@ About adios-python
 
 Home: https://www.olcf.ornl.gov/center-projects/adios/
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
