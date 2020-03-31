@@ -10,9 +10,13 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: http://users.nccs.gov/%7Epnorbert/adios-{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    # Numpy: Scalar Attributes Warning
+    # https://github.com/ornladios/ADIOS/pull/201
+    - 0001-numpy-asscalar-attributes.patch
 
 build:
-  number: 1005
+  number: 1006
   skip: True  # [win]
 
 requirements:
@@ -44,7 +48,7 @@ test:
 
 about:
   home: https://www.olcf.ornl.gov/center-projects/adios/
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: COPYING
   summary: 'Python bindings for the Adaptable IO System (ADIOS) for flexible and fast scientific data processing.'
