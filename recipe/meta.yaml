@@ -25,6 +25,9 @@ requirements:
     - {{ compiler('fortran') }}
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - cross-python_{{ target_platform }}  # [build_platform != target_platform]
+    - cython
+    - python                              # [build_platform != target_platform]
     - setuptools
   host:
     # pinned ADIOS c library version is important:
