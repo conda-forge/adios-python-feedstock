@@ -13,5 +13,5 @@ fi
 
 # numpy bindings
 cd wrappers/numpy
-make python
+make CYTHON=y python
 ${PYTHON} setup.py install
