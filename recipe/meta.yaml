@@ -16,7 +16,7 @@ source:
     - 0001-numpy-asscalar-attributes.patch
 
 build:
-  number: 1008
+  number: 1009
   skip: True  # [win]
 
 requirements:
