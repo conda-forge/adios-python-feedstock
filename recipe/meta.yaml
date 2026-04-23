@@ -16,14 +16,14 @@ source:
     - 0001-numpy-asscalar-attributes.patch
 
 build:
-  number: 1009
+  number: 1010
   skip: True  # [win]
 
 requirements:
   build:
-    - {{ pin_compatible('numpy') }}
     - {{ compiler('fortran') }}
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - cross-python_{{ target_platform }}  # [build_platform != target_platform]
     - cython
